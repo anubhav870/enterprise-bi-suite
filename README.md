@@ -171,9 +171,9 @@ The three regions add up to the company total of $43.6M.
 
 ### Performance `\[TODO]`
 
-* SQL warehouse load time: `\[TODO: seconds]`
-* Power BI Service refresh duration: `\[TODO: from refresh history]`
-* Slowest visual (Performance Analyzer): `\[TODO: ms]`
+* SQL warehouse load time: 2.219000 seconds
+* Power BI Service refresh duration: 4m 30s
+* Slowest visual (Performance Analyzer): Sales YoY% card with 488 ms
 
 ## 11\. Known limitations
 
