@@ -103,7 +103,7 @@ README.md
 |Item|Status|
 |-|-|
 |Source views to staging to star schema, in SQL (`stg.usp\_RefreshStaging`, `dw.usp\_LoadDW`)|Done|
-|Scheduled load (SQL Server Agent job or Windows Task Scheduler running `sqlcmd`)|`\[TODO: state which one you used and add the job history screenshot]`|
+| Scheduled load: SQL Server Agent job `BI_DW_Daily_Load` (step 1 refreshes staging, step 2 loads the warehouse, daily at 2:00 AM). Evidence: `docs/screenshots/sql-agent-job-history.png` | Done |
 | Azure Data Factory pipeline | Not completed. The scheduled SQL load was used instead, which the brief allows. |
 |Power BI Service scheduled refresh through the gateway|Done (daily, 3:00 AM)|
 
