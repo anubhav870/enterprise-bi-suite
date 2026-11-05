@@ -4,8 +4,7 @@ One reporting system that combines **sales, finance, supply chain (purchasing) a
 
 **Project:** DA-01, Data Analytics track
 **Author:** Anubhav
-**Stack:** SQL Server, Power Query, Power BI (DAX), Power BI Service, on-premises data gateway, Azure Data Factory \[TODO: Not completed; the scheduled SQL load was used, which the brief allows]
-
+**Stack:** SQL Server, Power Query, Power BI (DAX), Power BI Service, on-premises data gateway
 \---
 
 ## 1\. Problem
@@ -67,7 +66,6 @@ sql/
   01\_source\_views.sql     etl.\* views over AdventureWorks2022
   02\_warehouse.sql        BI\_DW database, staging refresh proc, star schema load proc
   03\_tests.sql            data-quality tests (7 checks)
-adf/                      Azure Data Factory pipeline JSON  \[TODO]
 powerbi/
   BI\_Suite.pbix           Power BI model and report
 docs/
@@ -106,7 +104,7 @@ README.md
 |-|-|
 |Source views to staging to star schema, in SQL (`stg.usp\_RefreshStaging`, `dw.usp\_LoadDW`)|Done|
 |Scheduled load (SQL Server Agent job or Windows Task Scheduler running `sqlcmd`)|`\[TODO: state which one you used and add the job history screenshot]`|
-|Azure Data Factory pipeline (ForEach copy to staging, then stored procedure)|`\[TODO: either describe what you built, or write "Not completed; the scheduled SQL load was used, which the brief allows."]`|
+| Azure Data Factory pipeline | Not completed. The scheduled SQL load was used instead, which the brief allows. |
 |Power BI Service scheduled refresh through the gateway|Done (daily, 3:00 AM)|
 
 The warehouse load rebuilds all tables on each run. This is fine at this data size.
@@ -189,7 +187,7 @@ The three regions add up to the company total of $43.6M.
 * **Placeholder manager emails** in `UserRegion` (see section 9).
 
 ## 12\. Next steps
-
+*- Build the Azure Data Factory pipeline (copy to staging, then run the warehouse load) and schedule it
 * Slowly changing dimensions (SCD Type 2) for products, customers and employees
 * Incremental refresh on the fact tables
 * Historical standard cost for accurate margins
