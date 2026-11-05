@@ -57,7 +57,7 @@ The data runs from about mid-2011 to mid-2014, so 2011 and 2014 are partial year
 
 `DimDate` and `DimRegion` are shared by all three fact tables, which is what lets one slicer filter sales, purchasing and HR together.
 
-Full column list: `docs/data-dictionary.md`
+Full column list: [`docs/data-dictionary.md`](docs/data-dictionary.md)
 
 ## 5\. Repository structure
 
