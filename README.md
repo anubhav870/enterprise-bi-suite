@@ -29,7 +29,7 @@ Power BI semantic model (BI\_Suite.pbix)
 Power BI Service  ->  region managers
 ```
 
-Architecture diagram: `docs/architecture-diagram.png` `\[TODO: add after drawing in draw.io]`
+![Architecture diagram](docs/architecture-diagram.png)
 
 ## 3\. Dataset
 
